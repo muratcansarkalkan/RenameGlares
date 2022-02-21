@@ -14,7 +14,7 @@ vari = [1,2,3]
 # Asks for stadium ID then converts string to integer
 id = input("Stadium ID?")
 
-# Copy-paste function, shutil.copy copies the file and renames it. 
+# Copy-paste function, shutil.copy copies the file and renames it. This is for day/night duplication
 for i in cond:
     for j in cond:
         for k in exten:
@@ -29,6 +29,7 @@ for i in cond:
                 else:
                     continue
 
+# For alternate condition duplicate
 for j in cond:
     for i in vari:
         src_dir="glares_%s_%s_0.lnx" % (id, j)
